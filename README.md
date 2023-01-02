@@ -7,7 +7,7 @@ My go to framework would be cypress because of its easy to use nature. Also if w
 and for each pull request to the front-end code this scenario needs to pass. I think this scenario takes about 10s so its really fast and reliable.
 
 2. **On step 5, the system is supposed to send an email. How would you check if the email was really received to the email address?**
-
+https://www.mediatoolkit.com/blog/how-to-read-cypress-gmail-tester/
 
 3. **How would you test the same scenario on different screen sizes?**
 

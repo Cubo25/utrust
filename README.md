@@ -12,6 +12,6 @@ and for each pull request to the front-end code this scenario needs to pass. I t
 3. **How would you test the same scenario on different screen sizes?**
 
 I would use enviroment variables and before each run I would enter desired viewport:
-https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Sharing-Context
-https://docs.cypress.io/guides/guides/environment-variables#Option-4-env
-https://docs.cypress.io/guides/guides/environment-variables#Option-5-Test-Configuration
+- https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Sharing-Context
+- https://docs.cypress.io/guides/guides/environment-variables#Option-4-env
+- https://docs.cypress.io/guides/guides/environment-variables#Option-5-Test-Configuration

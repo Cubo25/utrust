@@ -1,18 +1,16 @@
-class mainPage{
+class mainPage {
+  elements = {
+    paymentsSidebar: () => cy.get('[data-test="payments/orders-sidebarLink"]'),
 
-    elements ={
+    paymentsTabs: () => cy.get('[data-test="paymentsTabs"]'),
 
-        paymentsSidebar : () => cy.get('[data-test="payments/orders-sidebarLink"]'),
+    newInvoiceBtn: () => cy.get('[data-test="button-new-invoice"]'),
+  };
 
-        paymentsTabs : () => cy.get('[data-test="paymentsTabs"]'),
-
-        newInvoiceBtn : () => cy.get('[data-test="button-new-invoice"]'),
-
-    }
-    // just an example
-    createInvoice(){
-        this.elements.newInvoiceBtn().click()
-    }
+  // just an example
+  createInvoice() {
+    this.elements.newInvoiceBtn().click();
+  }
 }
 
 module.exports = new mainPage();

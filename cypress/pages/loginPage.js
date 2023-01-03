@@ -1,17 +1,15 @@
-class loginPage{
+class loginPage {
+  elements = {
+    emailInput: () => cy.get("#email"),
 
-    elements ={
+    passwordInput: () => cy.get("#password"),
 
-        emailInput : () => cy.get('#email'),
+    signInBtn: () => cy.get("#progress-status"),
+  };
 
-        passwordInput : () => cy.get('#password'),
-
-        signInBtn : () => cy.get('#progress-status'),
-
-    }
-    clickOnSignin(){
-        this.elements.signInBtn().click()
-    }
+  clickOnSignin() {
+    this.elements.signInBtn().click();
+  }
 }
 
 module.exports = new loginPage();

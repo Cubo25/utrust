@@ -14,12 +14,12 @@
 const loginPage = require("../pages/loginPage");
 
 // Cypress.Commands.add('login', (email, password) => { ... })
-Cypress.Commands.add('uiLogin', (email, password) => { 
-    cy.visit(Cypress.config('baseUrl'))
-    loginPage.elements.emailInput().type(email);
-    loginPage.elements.passwordInput().type(password);
-    loginPage.clickOnSignin();
- })
+Cypress.Commands.add("uiLogin", (email, password) => {
+  cy.visit(Cypress.config("baseUrl"));
+  loginPage.elements.emailInput().type(email);
+  loginPage.elements.passwordInput().type(password);
+  loginPage.clickOnSignin();
+});
 //
 //
 // -- This is a child command --

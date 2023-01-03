@@ -1,47 +1,44 @@
-class newInvoicePage{
+class newInvoicePage {
+  elements = {
+    customerNameInput: () => cy.get("#customerName"),
 
-    elements = {
+    sendIssuedEmailCheckbox: () => cy.get("#sendIssuedEmail"),
 
-        customerNameInput : () => cy.get('#customerName'),
+    customerEmailInput: () => cy.get("#customerEmail"),
 
-        sendIssuedEmailCheckbox : () => cy.get('#sendIssuedEmail'),
+    billingAddressInput: () => cy.get("#billingAddress"),
 
-        customerEmailInput : () => cy.get('#customerEmail'),
+    cityInput: () => cy.get("#city"),
 
-        billingAddressInput : () => cy.get('#billingAddress'),
+    postCodeInput: () => cy.get("#postCode"),
 
-        cityInput : () => cy.get('#city'),
+    countryInput: () => cy.get("#downshift-5-input"),
 
-        postCodeInput : () => cy.get('#postCode'),
+    countryInputOption: (country) => cy.get(`[data-test="option-${country}"]`),
 
-        countryInput : () => cy.get('#downshift-5-input'),
+    currencyInput: () => cy.get("#downshift-4-input"),
 
-        countryInputOption : (country) => cy.get(`[data-test="option-${country}"]`),
+    currencyInputOption: (currency) =>
+      cy.get(`[data-test="option-${currency}"]`),
 
-        currencyInput : () => cy.get('#downshift-4-input'),
+    amountInput: () => cy.get("#amount"),
 
-        currencyInputOption : (currency) => cy.get(`[data-test="option-${currency}"]`),
+    descriptionInput: () => cy.get("#description"),
 
-        amountInput : () => cy.get('#amount'),
+    generateInvoiceBtn: () => cy.get('[data-test="generate-invoice-button"]'),
 
-        descriptionInput : () => cy.get('#description'),
+    submitInvoiceBtn: () => cy.get('[data-test="submit-new-invoice-button"]'),
 
-        generateInvoiceBtn : () => cy.get('[data-test="generate-invoice-button"]'),
+    invoiceSentOkBtn: () => cy.get('[data-test="invoice-sent-ok"]'),
+  };
 
-        submitInvoiceBtn : () => cy.get('[data-test="submit-new-invoice-button"]'),
+  selectCountry(country) {
+    this.elements.countryInputOption(country).click();
+  }
 
-        invoiceSentOkBtn : () => cy.get('[data-test="invoice-sent-ok"]'),
-
-    }
-
-    selectCountry(country){
-        this.elements.countryInputOption(country).click()
-    }
-
-    selectCurrency(currency){
-        this.elements.currencyInputOption(currency).click()
-    }
-
+  selectCurrency(currency) {
+    this.elements.currencyInputOption(currency).click();
+  }
 }
 
 module.exports = new newInvoicePage();

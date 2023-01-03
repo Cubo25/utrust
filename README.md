@@ -1,14 +1,11 @@
 # Utrust
-## First work on Utrust project
-
-## Installation
-1. `git clone https://github.com/Cubo25/Innovatrics.git`
-2. `cd Innovatrics` 
-3. `npm install` in the folder
-4. `npm cypress open` to run Cypress
-## Materials
+Jakub Vitek QA Engineer Challenge based on 
 https://docs.google.com/document/d/1fvSLIfklYzT30kr-d1bEQH1PEdZLpvlhiSUAH7NkVSc/edit#heading=h.foh0w5l4waj4
-
+## Installation
+1. `git clone https://github.com/Cubo25/utrust.git`
+2. `cd utrust` 
+3. `npm install` in the folder
+4. `npx cypress open` to run Cypress
 
 ### Questions
 1. **We want to run this scenario automatically and frequently. What process/setup/tools would you choose to achieve this?**

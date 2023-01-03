@@ -7,8 +7,7 @@
 3. `npm install` in the folder
 4. `npm cypress open` to run Cypress
 ## Materials
-- Test cases can be found in testCases.xlsx in testCase folder
-- Bug report and improvements can be found in bugAndImprovement.docx in testCase folder
+https://docs.google.com/document/d/1fvSLIfklYzT30kr-d1bEQH1PEdZLpvlhiSUAH7NkVSc/edit#heading=h.foh0w5l4waj4
 
 
 ### Questions

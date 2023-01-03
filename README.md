@@ -1,5 +1,16 @@
-# UTRUST
+# Utrust
 ## First work on Utrust project
+
+## Installation
+1. `git clone https://github.com/Cubo25/Innovatrics.git`
+2. `cd Innovatrics` 
+3. `npm install` in the folder
+4. `npm cypress open` to run Cypress
+## Materials
+- Test cases can be found in testCases.xlsx in testCase folder
+- Bug report and improvements can be found in bugAndImprovement.docx in testCase folder
+
+
 ### Questions
 1. **We want to run this scenario automatically and frequently. What process/setup/tools would you choose to achieve this?**
 

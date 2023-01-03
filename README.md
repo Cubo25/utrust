@@ -1,5 +1,5 @@
 # Utrust
-Jakub Vitek QA Engineer Challenge
+Jakub Vitek QA Engineer challenge
 
 https://docs.google.com/document/d/1fvSLIfklYzT30kr-d1bEQH1PEdZLpvlhiSUAH7NkVSc/edit#heading=h.foh0w5l4waj4
 

@@ -20,9 +20,9 @@ My go to framework would be cypress because it is easy to use, fast and reliable
 
 2. **On step 5, the system is supposed to send an email. How would you check if the email was really received to the email address?**
 
-I did not finish this task but I would go with this gmail tester or any other plugin/tool found.
+I would go with this gmail tester or any other plugin/tool found.
 
-https://www.mediatoolkit.com/blog/how-to-read-cypress-gmail-tester/
+- https://www.mediatoolkit.com/blog/how-to-read-cypress-gmail-tester/
 
 3. **How would you test the same scenario on different screen sizes?**
 

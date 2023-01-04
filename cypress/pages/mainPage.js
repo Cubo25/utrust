@@ -7,7 +7,7 @@ class mainPage {
     newInvoiceBtn: () => cy.get('[data-test="button-new-invoice"]'),
   };
 
-  // just an example
+  // just an example not used anywhere
   createInvoice() {
     this.elements.newInvoiceBtn().click();
   }

@@ -1,6 +1,6 @@
 class widgetAppPage {
   elements = {
-    // in here we need better selectors
+    // in here we need better selectors not classes
     merchantName: () => cy.get(".Details_head__1Ey_M"),
 
     description: () => cy.get(".Details_listItems__QWDe5"),

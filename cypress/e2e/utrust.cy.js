@@ -5,10 +5,15 @@ const mainPage = require("../pages/mainPage");
 const newInvoicePage = require("../pages/newInvoicePage");
 const widgetAppPage = require("../pages/widgetAppPage");
 
+afterEach(() => {
+  // after each test I would delete the created invoice but I only saw canceled state
+  // I would need more info from business point of view
+});
+
 describe("Utrust invoice", () => {
   it("Send invoice via email", () => {
     // login via the UI with custom cypress command
-    cy.uiLogin("j.vitek25@gmail.com", "Bjy3!9tSCCgzVa!");
+    cy.uiLogin();
     // navigate to the new invoice form
     mainPage.elements.paymentsSidebar().click();
     mainPage.elements.paymentsTabs().contains("Invoices").click();
@@ -32,7 +37,7 @@ describe("Utrust invoice", () => {
     // submit the invoice form
     newInvoicePage.elements.submitInvoiceBtn().click();
     newInvoicePage.elements.invoiceSentOkBtn().click();
-    // The HTTP 201 Created success status response code indicates that the request has succeeded and has led to the creation of a resource
+    // The HTTP 201 created success status response code indicates that the request has succeeded and has led to the creation of a resource
     cy.wait("@getInvoices").its("response.statusCode").should("eq", 201);
     // visit payment link from the details
     invoiceDetailsPage.elements

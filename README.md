@@ -26,7 +26,7 @@ I would go with this gmail tester or any other plugin/tool found.
 
 3. **How would you test the same scenario on different screen sizes?**
 
-Quoting the documentation:
+Quoting the documentation and following the best practises.
 
 > You can configure the size of the viewport height and width within a suite or test by passing the new configuration value within the test configuration.
 

@@ -9,6 +9,10 @@ https://docs.google.com/document/d/1fvSLIfklYzT30kr-d1bEQH1PEdZLpvlhiSUAH7NkVSc/
 3. `npm install` in the folder
 4. `npx cypress open` to run Cypress
 
+### Implementation decisions
+
+Comments can be found directly in the code
+
 ### Questions
 1. **We want to run this scenario automatically and frequently. What process/setup/tools would you choose to achieve this?**
 

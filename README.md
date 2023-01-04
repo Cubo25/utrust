@@ -11,7 +11,7 @@ https://docs.google.com/document/d/1fvSLIfklYzT30kr-d1bEQH1PEdZLpvlhiSUAH7NkVSc/
 
 ### Implementation decisions
 
-Comments can be found directly in the code
+Comments can be found directly in the code in file utrust.cy.js
 
 ### Questions
 1. **We want to run this scenario automatically and frequently. What process/setup/tools would you choose to achieve this?**

@@ -9,13 +9,20 @@ https://docs.google.com/document/d/1fvSLIfklYzT30kr-d1bEQH1PEdZLpvlhiSUAH7NkVSc/
 3. `npm install` in the folder
 4. `npx cypress open` to run Cypress
 
+### Implementation decisions
+
+Comments can be found directly in the code in file utrust.cy.js
+
 ### Questions
 1. **We want to run this scenario automatically and frequently. What process/setup/tools would you choose to achieve this?**
 
-My go to framework would be cypress because it is easy to use, fast and reliable. It comes with rich documentation & community of developers. Also if we want to use this scenario often I would set up CI/CD pipeline (e.g. gitlab) and for each pull request to the front-end code this scenario needs to pass. I think this scenario takes about 10s so its really fast and reliable.
+My go to framework would be cypress because it is easy to use, fast and reliable. It comes with rich documentation & community of developers. Also if we want to use this scenario often I would set up CI/CD pipeline (e.g. gitlab) and for each pull request to the front-end code this scenario needs to pass. I think this scenario takes about 6 to 7 seconds so its really fast and reliable.
 
 2. **On step 5, the system is supposed to send an email. How would you check if the email was really received to the email address?**
-https://www.mediatoolkit.com/blog/how-to-read-cypress-gmail-tester/
+
+I would go with this gmail tester or any other plugin/tool found.
+
+- https://www.mediatoolkit.com/blog/how-to-read-cypress-gmail-tester/
 
 3. **How would you test the same scenario on different screen sizes?**
 

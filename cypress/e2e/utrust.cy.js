@@ -7,12 +7,13 @@ const widgetAppPage = require("../pages/widgetAppPage");
 
 afterEach(() => {
   // after each test I would delete the created invoice but I only saw canceled state
-  // I would need more info from business point of view
+  // I would need more info from business point of view and also api info
 });
 
 describe("Utrust invoice", () => {
   it("Send invoice via email", () => {
     // login via the UI with custom cypress command
+    // api login also possible to fasten the test case
     cy.uiLogin();
     // navigate to the new invoice form
     mainPage.elements.paymentsSidebar().click();

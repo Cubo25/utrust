@@ -38,7 +38,7 @@ describe("Utrust invoice", () => {
     // submit the invoice form
     newInvoicePage.elements.submitInvoiceBtn().click();
     newInvoicePage.elements.invoiceSentOkBtn().click();
-    // The HTTP 201 created success status response code indicates that the request has succeeded and has led to the creation of a resource
+    // 201 status response code indicates that the request has succeeded and has led to the creation of a resource
     cy.wait("@getInvoices").its("response.statusCode").should("eq", 201);
     // visit payment link from the details
     invoiceDetailsPage.elements
